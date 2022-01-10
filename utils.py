@@ -14,7 +14,7 @@ def news_helper(news):
 
 def create_telegram_msg(news):
     text = f"*bold \*{news['title']}*" \
-           f"\n\n*italic \*{news['body']}*" \
+           f"\n\n_italic \*{news['body']}_" \
            f"\n\n*bold \*Source:* [Click here to visit the article site.]({news['guid']})"
     return text
 
