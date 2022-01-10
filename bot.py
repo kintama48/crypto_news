@@ -54,9 +54,12 @@ async def news():
         embed = news_helper(response)
         for channel in channels:
             await channel.send(embed=embed)
+        # telegram_bot.send_message(chat_id=config['telegram_channel_id'],
+        #                           text=escape_markdown(create_telegram_msg(response), version=2),
+        #                           parse_mode=telegram.ParseMode.MARKDOWN_V2)
         telegram_bot.send_message(chat_id=config['telegram_channel_id'],
-                                  text=escape_markdown(create_telegram_msg(response), version=2),
-                                  parse_mode=telegram.ParseMode.MARKDOWN_V2)
+                                  text=create_telegram_msg(response),
+                                  parse_mode='MarkdownV2')
         db.set_news_id(response['id'])
         await asyncio.sleep(120)
 
