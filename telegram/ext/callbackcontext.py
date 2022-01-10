@@ -1,4 +1,3 @@
-"""This module contains the CallbackContext class."""
 from queue import Queue
 from typing import (
     TYPE_CHECKING,
