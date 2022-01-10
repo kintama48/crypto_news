@@ -1,0 +1,15 @@
+{
+  "bot_prefix": "$",
+  "discord_token": "OTI4MDEyMTQ3OTc0MzY1MjE0.YdSkqQ.JfCG7urR_dF6-NFx2ZYddYS6MAk",
+  "telegram_token": "5011467015:AAEsqlKgZhmaoyM6T_Z4cNEw2M1hamRLtD8",
+  "discord_channel_ids": [],
+  "news": "https://min-api.cryptocompare.com/data/v2/news/?lang=EN&api_key=43f29461dbc8afc0bec3f402b8ebc56424b538cc9f628a5deb3a71baf58a94ba",
+  "telegram_channel_id": -1001613720557,
+  "database": {
+        "host": "ec2-54-196-105-177.compute-1.amazonaws.com",
+        "port": 5432,
+        "database": "d97cfv9mrfd6k0",
+        "user": "gpbiuffekhtshq",
+        "password": "ae6a08cf671bf5ba6cdc9e2b0bf3d32ad0bbb546f4ccc8a79f1949626f469c23"
+    }
+}
